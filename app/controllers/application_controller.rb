@@ -9,9 +9,10 @@ class ApplicationController < Sinatra::Base
 
   post "/trainers" do 
     trainer = Trainer.create(
-      name: params[:name]
+      name: params[:name],
       hometown: params[:hometown]
     )
+    trainer.to_json
   end
 
   get '/trainers/:id' do
@@ -28,7 +29,8 @@ class ApplicationController < Sinatra::Base
     pokemon.to_json
   end
 
-  patch '/trainers/:id' do
+  #Change Pokemon name
+  patch '/pokemons/:id' do
     pokemon = Pokemon.find(params[:id])
     pokemon.update(
       name: params[:name]
@@ -36,6 +38,7 @@ class ApplicationController < Sinatra::Base
     pokemon.to_json
   end
 
+  #Release Pokemon
   delete '/pokemons/:id' do
     pokemon = Pokemon.find(params[:id])
     pokemon.destroy
