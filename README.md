@@ -1,3 +1,22 @@
+# Catch That Pokemon!
+> I have included a frontend at the following GitHub URL:
+https://github.com/Syaora/phase-3-frontend
+
+## Endpoints
+- **Create** - Creates a new trainer entry
+- **Read** - Retrieves trainers
+- **Create** - Creates a new pokemon entry
+- **Read** - Retrieves pokemons through trainers
+- **Update** - Update pokemon's name
+- **Destroy** - Removes pokemon from pokemons
+
+## Modal
+- Trainers
+- Pokemons
+Trainer and Pokemon share a one to many relationship
+
+######
+
 # Phase 3 Project Guidelines
 
 ## Learning Goals
