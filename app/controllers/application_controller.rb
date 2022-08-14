@@ -24,7 +24,8 @@ class ApplicationController < Sinatra::Base
     pokemon = Pokemon.create(
       name: params[:name],
       species: params[:species],
-      trainer_id: params[:trainer_id]
+      trainer_id: params[:trainer_id],
+      url: params[:url]
     )
     pokemon.to_json
   end
