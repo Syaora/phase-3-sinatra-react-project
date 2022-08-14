@@ -13,6 +13,7 @@ https://github.com/Syaora/phase-3-frontend
 ## Modal
 - Trainers
 - Pokemons
+
 Trainer and Pokemon share a one to many relationship
 
 ######
