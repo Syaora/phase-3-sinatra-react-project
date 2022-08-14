@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_13_054728) do
+ActiveRecord::Schema.define(version: 2022_08_14_195420) do
 
   create_table "pokemons", force: :cascade do |t|
     t.string "species"
     t.string "name"
     t.integer "trainer_id"
+    t.string "url"
   end
 
   create_table "trainers", force: :cascade do |t|
